@@ -35,7 +35,7 @@ def listar_contas():
 
 
 
-@router.post("", response_model=ContaPagarReceberResponse, status_code=201)
+@router.post("/", response_model=ContaPagarReceberResponse, status_code=201)
 def criar_conta(conta: ContaPagarReceberRequest):
     return ContaPagarReceberResponse(
         id=3,

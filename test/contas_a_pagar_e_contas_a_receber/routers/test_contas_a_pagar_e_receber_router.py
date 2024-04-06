@@ -25,6 +25,6 @@ def test_deve_criar_conta_a_pagar_e_receber():
     nova_conta_copy = nova_conta.copy()
     nova_conta_copy["id"] = 3
 
-    response = client.post("/contas-a-pagar-e-contas-a-receber", json=nova_conta_copy)
+    response = client.post("/contas-a-pagar-e-contas-a-receber", json=nova_conta)
     assert response.status_code == 201
     assert response.json() == nova_conta_copy

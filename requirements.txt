@@ -1,0 +1,6 @@
+# APP
+fastapi==0.110.1
+uvicorn==0.29.0
+
+# TEST
+pytest==8.1.1

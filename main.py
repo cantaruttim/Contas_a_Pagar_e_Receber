@@ -6,7 +6,6 @@ from shared.database import engine, Base
 
 from contas_a_pagar_e_contas_a_receber.models.contas_a_pagar_e_contas_a_receber_model import ContaPagarReceber
 
-Base.metadata.drop_all(bind=engine)
 Base.metadata.create_all(bind=engine)
 
 

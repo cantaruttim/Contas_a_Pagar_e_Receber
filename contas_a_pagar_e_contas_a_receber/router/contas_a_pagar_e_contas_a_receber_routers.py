@@ -16,14 +16,13 @@ class ContaPagarReceberResponse(BaseModel):
 
 
 class ContaPagarReceberRequest(BaseModel):
-    id: int
     descricao: str
     valor: Decimal
     tipo: str
 
 
 
-@router.get("/", response_model=List[ContaPagarReceberResponse])
+@router.get("", response_model=List[ContaPagarReceberResponse])
 def listar_contas():
     return [
         ContaPagarReceberResponse(

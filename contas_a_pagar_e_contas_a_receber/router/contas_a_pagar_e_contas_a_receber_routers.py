@@ -16,6 +16,7 @@ class ContaPagarReceberResponse(BaseModel):
 
 
 class ContaPagarReceberRequest(BaseModel):
+    id: int
     descricao: str
     valor: Decimal
     tipo: str
